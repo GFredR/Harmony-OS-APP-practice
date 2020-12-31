@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "FirstJavaPhone"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "page2ability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    }
+  ]
+}

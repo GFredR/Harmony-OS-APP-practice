@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_firsttry" default="compile.module.firsttry">
+  <dirname property="module.firsttry.basedir" file="${ant.file.module_firsttry}"/>
+  
+  <property name="module.jdk.home.firsttry" value="${jdk.home.1.8}"/>
+  <property name="module.jdk.bin.firsttry" value="${jdk.bin.1.8}"/>
+  <property name="module.jdk.classpath.firsttry" value="jdk.classpath.1.8"/>
+  
+  <property name="compiler.args.firsttry" value="-encoding UTF-8 -source 12 -target 12 ${compiler.args}"/>
+  
+  <property name="firsttry.output.dir" value="${module.firsttry.basedir}/build/classes/production/FirstTry"/>
+  <property name="firsttry.testoutput.dir" value="${module.firsttry.basedir}/build/classes/test/FirstTry"/>
+  
+  <path id="firsttry.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="firsttry.module.production.classpath">
+    <path refid="${module.jdk.classpath.firsttry}"/>
+  </path>
+  
+  <path id="firsttry.runtime.production.module.classpath">
+    <pathelement location="${firsttry.output.dir}"/>
+  </path>
+  
+  <path id="firsttry.module.classpath">
+    <path refid="${module.jdk.classpath.firsttry}"/>
+    <pathelement location="${firsttry.output.dir}"/>
+  </path>
+  
+  <path id="firsttry.runtime.module.classpath">
+    <pathelement location="${firsttry.testoutput.dir}"/>
+    <pathelement location="${firsttry.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.firsttry">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.firsttry">
+    <patternset refid="excluded.from.module.firsttry"/>
+  </patternset>
+  
+  
+  <target name="compile.module.firsttry" depends="compile.module.firsttry.production,compile.module.firsttry.tests" description="Compile module FirstTry"/>
+  
+  <target name="compile.module.firsttry.production" depends="register.custom.compilers" description="Compile module FirstTry; production classes"/>
+  
+  <target name="compile.module.firsttry.tests" depends="register.custom.compilers,compile.module.firsttry.production" description="compile module FirstTry; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.firsttry" description="cleanup module">
+    <delete dir="${firsttry.output.dir}"/>
+    <delete dir="${firsttry.testoutput.dir}"/>
+  </target>
+</project>
