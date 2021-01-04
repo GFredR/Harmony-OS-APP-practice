@@ -4,7 +4,13 @@
     ohos:height="match_parent"
     ohos:width="match_parent"
     ohos:orientation="vertical">
+    <Button ohos:id="$+id:ckbtn"
+        ohos:height="500vp"
+        ohos:width="500vp"
+        ohos:text="ahhhahhahhahhah"
+        ohos:text_size="20vp">
 
+    </Button>
 <!--    <Text-->
 <!--        ohos:id="$+id:text_helloworld"-->
 <!--        ohos:height="match_content"-->

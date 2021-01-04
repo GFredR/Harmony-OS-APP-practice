@@ -11,6 +11,10 @@
     {
       "name": "page2ability_description",
       "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "firstserviceability_description",
+      "value": "hap sample empty service"
     }
   ]
 }

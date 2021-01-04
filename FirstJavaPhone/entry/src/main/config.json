@@ -32,7 +32,8 @@
               "entity.system.home"
             ],
             "actions": [
-              "action.system.home"
+              "action.system.home",
+              "action.page2"
             ]
           }
         ],
@@ -52,6 +53,12 @@
         "label": "entry",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "name": "com.example.firstjavaphone.FirstServiceAbility",
+        "icon": "$media:icon",
+        "description": "$string:firstserviceability_description",
+        "type": "service"
       }
     ]
   }
