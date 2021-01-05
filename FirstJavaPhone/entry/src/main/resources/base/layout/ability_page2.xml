@@ -5,14 +5,21 @@
     ohos:width="match_parent"
     ohos:orientation="vertical">
 
-    <Text
-        ohos:id="$+id:text_helloworld"
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:background_element="$graphic:background_ability_page2"
-        ohos:layout_alignment="horizontal_center"
-        ohos:text="Hello World"
-        ohos:text_size="50"
-        />
+    <Button ohos:id="$+id:backValueBtn"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text="往回传值"
+            ohos:text_size="20vp">
+
+    </Button>
+<!--    <Text-->
+<!--        ohos:id="$+id:text_helloworld"-->
+<!--        ohos:height="match_content"-->
+<!--        ohos:width="match_content"-->
+<!--        ohos:background_element="$graphic:background_ability_page2"-->
+<!--        ohos:layout_alignment="horizontal_center"-->
+<!--        ohos:text="Hello World"-->
+<!--        ohos:text_size="50"-->
+<!--        />-->
 
 </DirectionalLayout>
