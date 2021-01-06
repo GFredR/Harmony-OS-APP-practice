@@ -7,9 +7,7 @@ import ohos.aafwk.ability.ViewListener;
 import ohos.aafwk.content.Intent;
 import ohos.aafwk.content.Operation;
 import ohos.agp.colors.RgbColor;
-import ohos.agp.components.Button;
-import ohos.agp.components.Component;
-import ohos.agp.components.DependentLayout;
+import ohos.agp.components.*;
 import ohos.agp.components.element.ShapeElement;
 import ohos.agp.utils.Color;
 import ohos.agp.window.dialog.ToastDialog;
@@ -23,6 +21,14 @@ import static ohos.agp.components.ComponentContainer.LayoutConfig.MATCH_PARENT;
 
 public class MainAbilitySlice extends AbilitySlice {
     Button newBtn;
+    TextField usernameField;
+    Image loginImage;
+    Checkbox checkBox1;
+    Checkbox checkBox2;
+    Checkbox checkBox3;
+    RadioContainer radioContainer1;
+    RadioButton radioButton1;
+    RadioButton radioButton2;
     private static HiLogLabel hilabel = new HiLogLabel(HiLog.LOG_APP, 0x00101, "test");
     @Override
 
@@ -77,6 +83,17 @@ public class MainAbilitySlice extends AbilitySlice {
     }
     public void initView() {
         newBtn = (Button) findComponentById(ResourceTable.Id_newbtn);
+        usernameField = (TextField) findComponentById(ResourceTable.Id_usernameField);
+        loginImage = (Image) findComponentById(ResourceTable.Id_loginImg);
+        checkBox1 = (Checkbox) findComponentById(ResourceTable.Id_checkBox1);
+        checkBox2 = (Checkbox) findComponentById(ResourceTable.Id_checkBox2);
+        checkBox3 = (Checkbox) findComponentById(ResourceTable.Id_checkBox3);
+        radioButton1 = (RadioButton) findComponentById(ResourceTable.Id_radio1);
+        radioButton2 = (RadioButton) findComponentById(ResourceTable.Id_radio2);
+        radioContainer1 = (RadioContainer) findComponentById(ResourceTable.Id_radioContainer);
+
+        radioContainer1.mark(ResourceTable.Id_radio1);
+//        checkBox1.setButtonElement();
         //添加监听器
         newBtn.setClickedListener(new Component.ClickedListener() {
             @Override
