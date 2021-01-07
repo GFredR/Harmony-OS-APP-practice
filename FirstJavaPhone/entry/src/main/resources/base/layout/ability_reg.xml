@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:padding="10vp">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+        <Text ohos:id="$+id:regname"
+            ohos:height="30vp"
+            ohos:width="match_content"
+            ohos:text="姓名:"
+            ohos:text_size="20vp">
+        </Text>
+        <TextField ohos:id="$+id:nameField"
+            ohos:height="30vp"
+            ohos:width="100vp"
+            ohos:hint="请输入姓名"
+            ohos:text_size="20vp"
+            ohos:basement="#000099"
+            ohos:left_margin="10vp"
+            ohos:max_text_lines="1">
+
+        </TextField>
+        <Text ohos:id="$+id:regage"
+              ohos:height="30vp"
+              ohos:width="match_content"
+              ohos:text="年龄:"
+              ohos:text_size="20vp"
+            ohos:left_margin="10vp">
+        </Text>
+        <TextField ohos:id="$+id:ageField"
+                   ohos:height="30vp"
+                   ohos:width="100vp"
+                   ohos:hint="请输入年龄"
+                   ohos:text_size="20vp"
+                   ohos:basement="#000099"
+                   ohos:left_margin="10vp"
+                   ohos:max_text_lines="1">
+
+        </TextField>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+        <Text ohos:id="$+id:regname"
+              ohos:height="30vp"
+              ohos:width="match_content"
+              ohos:text="电话:"
+              ohos:text_size="20vp">
+        </Text>
+        <TextField ohos:id="$+id:nameField"
+                   ohos:height="30vp"
+                   ohos:width="100vp"
+                   ohos:hint="请输入电话"
+                   ohos:text_size="20vp"
+                   ohos:basement="#000099"
+                   ohos:left_margin="10vp"
+                   ohos:max_text_lines="1">
+
+        </TextField>
+        <Text ohos:id="$+id:regage"
+              ohos:height="30vp"
+              ohos:width="match_content"
+              ohos:text="地址:"
+              ohos:text_size="20vp"
+              ohos:left_margin="10vp">
+        </Text>
+        <TextField ohos:id="$+id:ageField"
+                   ohos:height="30vp"
+                   ohos:width="100vp"
+                   ohos:hint="请输入地址"
+                   ohos:text_size="20vp"
+                   ohos:basement="#000099"
+                   ohos:left_margin="10vp"
+                   ohos:max_text_lines="1">
+
+        </TextField>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent">
+
+        <RadioContainer
+            ohos:height="50vp"
+            ohos:width="match_parent" ohos:orientation="horizontal">
+            <Text ohos:id="$+id:regsex"
+                  ohos:height="30vp"
+                  ohos:width="match_content"
+                  ohos:text="性别:"
+                  ohos:text_size="20vp"
+                >
+            </Text>
+            <RadioButton ohos:id="$+id:maleRadio"
+                ohos:height="25vp"
+                ohos:width="match_content"
+                ohos:text="男"
+                ohos:text_size="20vp"
+                >
+            </RadioButton>
+            <RadioButton ohos:id="$+id:femaleRadio"
+                ohos:height="25vp"
+                ohos:width="match_content"
+                ohos:text="女"
+                ohos:text_size="20vp">
+            </RadioButton>
+        </RadioContainer>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+        <Checkbox ohos:id="$+id:hobby1"
+            ohos:height="25vp"
+            ohos:width="match_content"
+            ohos:text_size="20vp"
+            ohos:text="音乐"
+                  ohos:text_color_on="#FF3333"
+                  ohos:text_color_off="#000000">
+        </Checkbox>
+        <Checkbox ohos:id="$+id:hobby2"
+                  ohos:height="25vp"
+                  ohos:width="match_content"
+                  ohos:text_size="20vp"
+                  ohos:text="游戏"
+                  ohos:text_color_on="#FF3333"
+                  ohos:text_color_off="#000000">
+        </Checkbox>
+        <Checkbox ohos:id="$+id:hobby3"
+                  ohos:height="25vp"
+                  ohos:width="match_content"
+                  ohos:text_size="20vp"
+                  ohos:text="体育"
+                  ohos:text_color_on="#FF3333"
+                  ohos:text_color_off="#000000">
+        </Checkbox>
+        <Checkbox ohos:id="$+id:hobby4"
+                  ohos:height="25vp"
+                  ohos:width="match_content"
+                  ohos:text_size="20vp"
+                  ohos:text="阅读"
+                  ohos:text_color_on="#FF3333"
+                  ohos:text_color_off="#000000">
+        </Checkbox>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+        <Button
+            ohos:height="match_content"
+            ohos:width="50vp"
+            ohos:text="提交"
+            ohos:text_size="20vp"
+            ohos:left_margin="120vp"
+            ohos:background_element="$graphic:background_ability_reg">
+
+        </Button>
+        <Button
+            ohos:height="match_content"
+            ohos:width="50vp"
+            ohos:text="取消"
+            ohos:text_size="20vp"
+            ohos:left_margin="10vp"
+            ohos:background_element="$graphic:background_ability_reg">
+
+        </Button>
+    </DirectionalLayout>
+</DirectionalLayout>

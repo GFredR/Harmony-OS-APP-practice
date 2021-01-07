@@ -37,10 +37,10 @@
 
     </Image>
 
-<DirectionalLayout
-    ohos:height="match_parent"
-    ohos:width="match_parent"
-    ohos:orientation="horizontal">
+<!--<DirectionalLayout-->
+<!--    ohos:height="match_parent"-->
+<!--    ohos:width="match_parent"-->
+<!--    ohos:orientation="horizontal">-->
     <Checkbox ohos:id="$+id:checkBox1"
         ohos:height="match_content"
         ohos:width="match_content"
@@ -65,7 +65,7 @@
               ohos:text_color_on="#FF3333"
               ohos:text_color_off="#000000">
     </Checkbox>
-</DirectionalLayout>
+<!--</DirectionalLayout>-->
 <!--    <DirectionalLayout-->
 <!--        ohos:height="match_parent"-->
 <!--        ohos:width="match_parent"-->
@@ -87,5 +87,13 @@
 
             </RadioButton>
         </RadioContainer>
+    <ProgressBar ohos:id="$+id:progressBar"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+                 ohos:min="0"
+        ohos:max="100"
+        ohos:progress="60">
+
+    </ProgressBar>
 <!--    </DirectionalLayout>-->
 </DirectionalLayout>

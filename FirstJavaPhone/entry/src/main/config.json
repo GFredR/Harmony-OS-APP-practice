@@ -59,6 +59,15 @@
         "icon": "$media:icon",
         "description": "$string:firstserviceability_description",
         "type": "service"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.example.firstjavaphone.RegAbility",
+        "icon": "$media:icon",
+        "description": "$string:regability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }

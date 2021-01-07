@@ -15,6 +15,10 @@
     {
       "name": "firstserviceability_description",
       "value": "hap sample empty service"
+    },
+    {
+      "name": "regability_description",
+      "value": "Java_Phone_Empty Feature Ability"
     }
   ]
 }

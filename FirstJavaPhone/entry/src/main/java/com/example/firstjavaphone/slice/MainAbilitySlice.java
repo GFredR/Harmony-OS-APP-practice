@@ -29,6 +29,7 @@ public class MainAbilitySlice extends AbilitySlice {
     RadioContainer radioContainer1;
     RadioButton radioButton1;
     RadioButton radioButton2;
+    ProgressBar progressBar;
     private static HiLogLabel hilabel = new HiLogLabel(HiLog.LOG_APP, 0x00101, "test");
     @Override
 
@@ -93,6 +94,7 @@ public class MainAbilitySlice extends AbilitySlice {
         radioContainer1 = (RadioContainer) findComponentById(ResourceTable.Id_radioContainer);
 
         radioContainer1.mark(ResourceTable.Id_radio1);
+        progressBar = (ProgressBar) findComponentById(ResourceTable.Id_progressBar);
 //        checkBox1.setButtonElement();
         //添加监听器
         newBtn.setClickedListener(new Component.ClickedListener() {
@@ -103,7 +105,7 @@ public class MainAbilitySlice extends AbilitySlice {
                 Intent intent1 = new Intent();
                 intent1.setParam("page2", "abc");
 //                present(new Page2AbilitySlice(), intent1);
-                presentForResult(new Page2AbilitySlice(), intent1, 123);
+                presentForResult(new RegAbilitySlice(), intent1, 123);
 //                Operation operation = new Intent.OperationBuilder()
 //                        .withDeviceId("")
 //                        .withBundleName("com.example.firstjavaphone")
