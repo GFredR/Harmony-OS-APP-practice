@@ -55,7 +55,7 @@
               ohos:text="电话:"
               ohos:text_size="20vp">
         </Text>
-        <TextField ohos:id="$+id:nameField"
+        <TextField ohos:id="$+id:phoneField"
                    ohos:height="30vp"
                    ohos:width="100vp"
                    ohos:hint="请输入电话"
@@ -72,7 +72,7 @@
               ohos:text_size="20vp"
               ohos:left_margin="10vp">
         </Text>
-        <TextField ohos:id="$+id:ageField"
+        <TextField ohos:id="$+id:addressField"
                    ohos:height="30vp"
                    ohos:width="100vp"
                    ohos:hint="请输入地址"
@@ -89,7 +89,9 @@
 
         <RadioContainer
             ohos:height="50vp"
-            ohos:width="match_parent" ohos:orientation="horizontal">
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:id="$+id:sexRadio">
             <Text ohos:id="$+id:regsex"
                   ohos:height="30vp"
                   ohos:width="match_content"
@@ -154,7 +156,7 @@
         ohos:height="match_content"
         ohos:width="match_parent"
         ohos:orientation="horizontal">
-        <Button
+        <Button ohos:id="$+id:submit"
             ohos:height="match_content"
             ohos:width="50vp"
             ohos:text="提交"
@@ -163,7 +165,7 @@
             ohos:background_element="$graphic:background_ability_reg">
 
         </Button>
-        <Button
+        <Button ohos:id="$+id:cancel"
             ohos:height="match_content"
             ohos:width="50vp"
             ohos:text="取消"
