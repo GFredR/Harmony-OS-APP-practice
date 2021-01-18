@@ -1,0 +1,13 @@
+<element name="hahha" src="../Arowfive/Arowfive.hml"></element>
+<div class="container">
+    <text class="title" >
+        {{ $t('strings.hello') }} {{title}}
+    </text>
+    <button @click="go">hahhahha</button>
+    <div>
+        <hahha></hahha>
+        <hahha></hahha>
+        <hahha></hahha>
+    </div>
+<!--    <button type="capsule" value="Go to the second page" class="button" onclick="launch"></button>-->
+</div>

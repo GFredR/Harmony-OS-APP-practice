@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Five_in_a_row"
+    },
+    {
+      "name": "mainability_description",
+      "value": "JS_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "nextpageability_description",
+      "value": "JS_Phone_Empty Feature Ability"
+    }
+  ]
+}

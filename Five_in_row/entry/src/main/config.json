@@ -1,0 +1,71 @@
+{
+  "app": {
+    "bundleName": "com.example.app_five_in_row",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.app_five_in_row",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.example.app_five_in_row.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "App_Five_in_row",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.example.app_five_in_row.Hello",
+        "icon": "$media:icon",
+        "description": "$string:hello_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/chess/chess",
+          "pages/index/index",
+          "pages/Arowfive/Arowfive"
+
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      }
+    ]
+  }
+}

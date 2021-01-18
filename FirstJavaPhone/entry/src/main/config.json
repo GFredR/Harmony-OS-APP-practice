@@ -12,8 +12,11 @@
       "releaseType": "Beta1"
     }
   },
-  "deviceConfig": {},
+  "deviceConfig": {
+
+  },
   "module": {
+    "reqPermissions": [{"name":"ohos.permission.INTERNET"}],
     "package": "com.example.firstjavaphone",
     "name": ".MyApplication",
     "deviceType": [
@@ -65,6 +68,15 @@
         "name": "com.example.firstjavaphone.RegAbility",
         "icon": "$media:icon",
         "description": "$string:regability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.example.firstjavaphone.BannerAbility",
+        "icon": "$media:icon",
+        "description": "$string:bannerability_description",
         "label": "entry",
         "type": "page",
         "launchType": "standard"

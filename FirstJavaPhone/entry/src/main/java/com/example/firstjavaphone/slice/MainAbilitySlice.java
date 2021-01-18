@@ -103,9 +103,10 @@ public class MainAbilitySlice extends AbilitySlice {
                 //点击事件
 //                new ToastDialog(getContext()).setText("这是个Toast").show();
                 Intent intent1 = new Intent();
-                intent1.setParam("page2", "abc");
-//                present(new Page2AbilitySlice(), intent1);
-                presentForResult(new RegAbilitySlice(), intent1, 123);
+//                intent1.setParam("page2", "abc");
+////                present(new Page2AbilitySlice(), intent1);
+//                presentForResult(new RegAbilitySlice(), intent1, 123);
+                present(new BannerAbilitySlice(), intent1);
 //                Operation operation = new Intent.OperationBuilder()
 //                        .withDeviceId("")
 //                        .withBundleName("com.example.firstjavaphone")

@@ -37,7 +37,7 @@ public class RegAbilitySlice extends AbilitySlice {
         hobby3 = (Checkbox) findComponentById(ResourceTable.Id_hobby3);
         hobby4 = (Checkbox) findComponentById(ResourceTable.Id_hobby4);
 
-        
+
     }
 
     @Override

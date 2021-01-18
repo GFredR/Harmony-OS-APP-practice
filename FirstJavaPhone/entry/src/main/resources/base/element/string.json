@@ -19,6 +19,10 @@
     {
       "name": "regability_description",
       "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "bannerability_description",
+      "value": "Java_Phone_Empty Feature Ability"
     }
   ]
 }

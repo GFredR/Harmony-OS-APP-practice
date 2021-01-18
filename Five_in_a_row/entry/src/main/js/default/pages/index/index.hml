@@ -1,0 +1,12 @@
+<div class="container">
+    <text class="title" onclick="show">
+<!--        {{ $t('strings.hello') }} -->
+        {{title}}
+    </text>
+    <div if="isDisplay" for="item in products">
+        <text class="title">
+            {{$idx}} {{item}}
+        </text>
+
+    </div>
+</div>
